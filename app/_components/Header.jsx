@@ -32,31 +32,26 @@ const products = [
     name: "Salud y Medicamentos",
     description: "Get a better understanding of your traffic",
     href: "#",
-    icon: ChartPieIcon,
   },
   {
     name: "Cosmética",
     description: "Speak directly to your customers",
     href: "#",
-    icon: CursorArrowRaysIcon,
   },
   {
     name: "Higiene",
     description: "Your customers’ data will be safe and secure",
     href: "#",
-    icon: FingerPrintIcon,
   },
   {
     name: "Skincare",
     description: "Connect with third-party tools",
     href: "#",
-    icon: SquaresPlusIcon,
   },
   {
     name: "Accesorios",
     description: "Build strategic funnels that will convert",
     href: "#",
-    icon: ArrowPathIcon,
   },
 ];
 const callsToAction = [
