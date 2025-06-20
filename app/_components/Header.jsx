@@ -29,31 +29,31 @@ import {
 
 const products = [
   {
-    name: "Analytics",
+    name: "Salud y Medicamentos",
     description: "Get a better understanding of your traffic",
     href: "#",
     icon: ChartPieIcon,
   },
   {
-    name: "Engagement",
+    name: "Cosmética",
     description: "Speak directly to your customers",
     href: "#",
     icon: CursorArrowRaysIcon,
   },
   {
-    name: "Security",
+    name: "Higiene",
     description: "Your customers’ data will be safe and secure",
     href: "#",
     icon: FingerPrintIcon,
   },
   {
-    name: "Integrations",
+    name: "Skincare",
     description: "Connect with third-party tools",
     href: "#",
     icon: SquaresPlusIcon,
   },
   {
-    name: "Automations",
+    name: "Accesorios",
     description: "Build strategic funnels that will convert",
     href: "#",
     icon: ArrowPathIcon,
