@@ -114,12 +114,12 @@ const Header = () => {
                     key={item.name}
                     className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm/6 hover:bg-[#0BF7E0]"
                   >
-                    <div className="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-blue-50">
+                    {/* <div className="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-blue-50">
                       <item.icon
                         aria-hidden="true"
                         className="size-6 text-gray-600 group-hover:text-[#0BF7E0]"
                       />
-                    </div>
+                    </div> */}
                     <div className="flex-auto">
                       <a
                         href={item.href}
