@@ -5,29 +5,29 @@ function Products() {
   const products = [
     {
       id: 1,
-      name: "Vitamina C",
+      name: "Biotalol",
       imageUrl: "/image/producto.jpeg", // Asegúrate de que estas rutas sean correctas
       imageAlt: "Descripción del Producto 1",
       price: "$19.99",
     },
     {
       id: 2,
-      name: "Biotalol",
+      name: "Neuromix",
       imageUrl: "/image/producto-2.jpeg",
       imageAlt: "Descripción del Producto 2",
-      price: "$29.99",
+      price: "$49.99",
     },
     {
       id: 3,
       name: "Vitamina C",
-      imageUrl: "/image/producto.jpeg", // Asegúrate de que estas rutas sean correctas
+      imageUrl: "/image/producto-3.jpeg", // Asegúrate de que estas rutas sean correctas
       imageAlt: "Descripción del Producto 1",
-      price: "$19.99",
+      price: "$9.99",
     },
     {
       id: 4,
-      name: "Biotalol",
-      imageUrl: "/image/producto-2.jpeg",
+      name: "Acetaminofen",
+      imageUrl: "/image/producto-4.jpeg",
       imageAlt: "Descripción del Producto 2",
       price: "$29.99",
     },

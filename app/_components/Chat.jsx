@@ -15,40 +15,46 @@ function Chat() {
       <button
         type="button"
         onClick={toggleChat}
-        className="fixed bottom-6 right-6 z-50 p-4 rounded-full bg-[#367F8D] text-white shadow-lg 
+        className="fixed bottom-6 right-6 z-50 rounded-full bg-[#367F8D] text-white shadow-lg 
         hover:bg-[#18727D] transition-colors duration-300 focus:outline-none focus:ring-4 focus:ring-blue-300 
         flex items-center justify-center 
-        w-14 h-14 md:w-16 md:h-16 cursor-pointer" //Tamaño responsivo
+        w-16 h-16 md:w-20 md:h-20 cursor-pointer" //Tamaño responsivo
         aria-label={isOpen ? "Cerrar chat" : "Abrir chat"}
       >
         {/* Icono de chat */}
         {/* Puedes usar un icono de librería o un SVG/carácter Unicode */}
         {isOpen ? (
-          <span className="text-3xl">✖</span> // Icono de cerrar
+          <span className="text-4xl">✖</span> // Icono de cerrar
         ) : (
-          // <XMarkIcon className="h-7 w-7" />
-          <span className="text-3xl">💬</span> // Icono de chat
-          // <ChatBubbleBottomCenterTextIcon className="h-7 w-7" />
+          <div className="relative w-full h-full flex items-center justify-center rounded-full overflow-hidden">
+            <Image
+              src="/image/asistente.jpeg" // <-- ¡IMPORTANTE! Reemplaza con la ruta de tu imagen
+              alt="Icono de chat"
+              fill
+              className="object-cover" // object-contain para que la imagen quepa sin recortarse en el círculo
+              sizes="200px" // Ayuda a Next.js a optimizar el tamaño de la imagen para el botón
+            />
+          </div>
         )}
       </button>
 
       {isOpen && (
         <div
-          className="fixed bottom-24 right-6 z-40 bg-white rounded-lg shadow-xl border border-gray-200
+          className="fixed bottom-32 right-6 z-40 bg-white rounded-lg shadow-xl border border-gray-200
                         w-[calc(100vw-3rem)] max-w-sm h-96 flex flex-col"
         >
           {/* Encabezado del Chat */}
           <div className="bg-[#367F8D] text-white p-4 rounded-t-lg flex items-center justify-between">
             <div className="flex items-center">
               {/* Imagen del Asistente */}
-              <div className="mr-2 relative w-8 h-8 rounded-full overflow-hidden">
+              {/* <div className="mr-2 relative w-8 h-8 rounded-full overflow-hidden">
                 <Image
                   src="/image/asistente.jpeg" // Reemplaza con la ruta de tu imagen
                   alt="Avatar de Sofia"
                   fill
                   className="object-cover"
                 />
-              </div>
+              </div> */}
               <h3 className="text-lg font-semibold">Sofia Asistente Virtual</h3>
             </div>
             {/* Botón de cerrar (opcional aquí) */}

@@ -29,7 +29,7 @@ import {
 
 const products = [
   {
-    name: "Salud y Medicamentos",
+    name: "Medicamentos",
     description: "Get a better understanding of your traffic",
     href: "#",
   },
@@ -49,14 +49,10 @@ const products = [
     href: "#",
   },
   {
-    name: "Accesorios",
+    name: "Insumos Médicos",
     description: "Build strategic funnels that will convert",
     href: "#",
   },
-];
-const callsToAction = [
-  { name: "Watch demo", href: "#", icon: PlayCircleIcon },
-  { name: "Contact sales", href: "#", icon: PhoneIcon },
 ];
 
 const Header = () => {
@@ -122,16 +118,12 @@ const Header = () => {
                         {item.name}
                         <span className="absolute inset-0" />
                       </a>
-                      {/* <p className="mt-1 text-gray-600">{item.description}</p> */}
                     </div>
                   </div>
                 ))}
               </div>
             </PopoverPanel>
           </Popover>
-          {/* <a href="#" className="text-sm/6 font-semibold text-white">
-            Cuentas x Cobrar
-          </a> */}
           <a href="#" className="text-md/6 font-semibold text-white">
             Pedidos
           </a>
@@ -190,7 +182,7 @@ const Header = () => {
                     />
                   </DisclosureButton>
                   <DisclosurePanel className="mt-2 space-y-2">
-                    {[...products, ...callsToAction].map((item) => (
+                    {[...products].map((item) => (
                       <DisclosureButton
                         key={item.name}
                         as="a"

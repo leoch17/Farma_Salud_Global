@@ -20,7 +20,7 @@ function Publicity() {
               <div className="relative aspect-video rounded-lg overflow-hidden shadow-lg border border-gray-200">
                 {/* Usamos Next.js Image para optimización */}
                 <Image
-                  src="/image/producto-2.jpeg" // **Reemplaza con la ruta de tu imagen real**
+                  src="/image/publicidad.jpeg" // **Reemplaza con la ruta de tu imagen real**
                   alt="Publicidad 2 - Imagen"
                   fill // Hace que la imagen llene el contenedor
                   className="object-cover" // Recorta la imagen para que cubra el área
