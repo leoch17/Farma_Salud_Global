@@ -8,7 +8,7 @@ const Banner = () => {
         src="/image/logo.png"
         alt="Farma Salud Global Banner"
         fill
-        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 100vw"
         className="object-cover"
       />
     </div>
